@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <p class="accent">주문이 완료 되었습니다.</p> -->
+    <script>
+      var newP = document.createElement("p");
+      //   console.log(newP);
+      var newText = document.createTextNode("주문이 완료 되었습니다.");
+      //   console.log(newText);
+      //   부모노듣에 appendChild(자식노드)
+      newP.appendChild(newText);
+      //   console.log(newP.appendChild(newText));
+      document.body.appendChild(newP);
+      //   console.log(newP);
+      var attr = document.createAttribute("class");
+      //   console.log(attr);
+      attr.value = "accent";
+      //   console.log(attr);
+      console.log(newP);
+    </script>
+  </body>
+</html>
